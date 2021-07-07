@@ -7,9 +7,14 @@ header.addEventListener('mouseleave', (event) =>{
     event.target.style.backgroundColor = 'white';
 
 });
-const destination = document.querySelector('.btn');
-const destinationArray = Array.from(destination)
 
-destinationArray.forEach('mouseenter', (event) => {
-    event.target.style.backgroundColor = 'purple'
+
+const footer = document.querySelector('.footer');
+
+footer.addEventListener('mouseenter', (event) => {
+    event.target.style.backgroundColor = 'red';
+})
+footer.addEventListener('mouseleave', (event) =>{
+    event.target.style.backgroundColor = 'white';
+
 });
