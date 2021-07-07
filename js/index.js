@@ -32,3 +32,31 @@ Array.from(title).forEach(elem => {
         event.target.style.backgroundColor = '#17A2B8';
         })
 })
+
+const images = document.querySelector('.container.home');
+const blurry = images.querySelectorAll('img')
+
+Array.from(blurry).forEach(elem => {
+    elem.addEventListener('mouseenter', (event) => {
+        event.target.style.filter = 'blur(3px)';
+    });
+});
+Array.from(blurry).forEach(elem => {
+    elem.addEventListener('mouseleave', (event) => {
+        event.target.style.filter = 'none';
+    });
+});
+
+const headings = document.querySelector('.container.home')
+const weights = headings.querySelectorAll('h2,h3,h4')
+
+Array.from(weights).forEach(elem => {
+    elem.addEventListener('mouseenter', (event) => {
+        event.target.style.fontWeight = 'bold';
+    });
+});
+Array.from(weights).forEach(elem => {
+    elem.addEventListener('mouseleave', (event) => {
+        event.target.style.fontWeight = 'normal';
+    })
+})
